@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head">
+      <search></search>
+    </view>
+    <!-- 轮播图 -->
+    <view class="swiper">
+      <swiper indicator-dots indicator-active-color="#fff" autoplay>
+        <swiper-item class="item" wx:for="{{swiperList}}"  wx:key="goods_id">
+          <navigator url="{{item.navigator_url}}">
+            <image src="{{item.image_src}}" mode="aspectFill" />
+          </navigator>      
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 导航栏 -->
+    <view class="nav">
+      <view class="item" wx:for="{{navList}}" wx:key="goods_id">
+        <navigator url="{{item.navigator_url}}" open-type="switchTab">
+          <image src="{{item.image_src}}" />
+        </navigator>
+      </view>
+    </view>
+    <!-- 楼层区 -->
+    <view class="floor" wx:for="{{floorList}}" wx:key="index">
+      <view class="floor_hd">
+        <image src="{{item.floor_title.image_src}}" />
+      </view>
+      <view class="floor_bd">
+        <navigator
+          wx:for="{{item.product_list}}"
+          wx:for-item="innerItem" 
+          wx:for-index="innerIndex" 
+          wx:key="innerIndex" url="{{modifyURL}}" 
+          data-url="{{innerItem.navigator_url}}" 
+          bindtouchstart="modify">
+          <image src="{{innerItem.image_src}}" />
+        </navigator> 
+      </view>
+    </view>
+</view>

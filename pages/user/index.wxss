@@ -1,0 +1,121 @@
+page {
+    background-color: #edece8;
+}
+
+.login_wrap {
+    position: relative;
+    height: 45vh;
+    background-color: #eb4450;
+}
+
+.pic-bg {
+    width: 100vw;
+    height: 45vh;
+    filter: blur(10px);
+}
+
+.info {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.info .pics {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+}
+
+.touxiang {
+    width: 100%;
+    height: 100%;
+}
+
+.info .nickname {
+    text-align: center;
+    color: #fff;
+}
+
+.btn-login {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.content {
+    position: absolute;
+    top: 40vh;
+    left: 25rpx;
+    width: 700rpx;
+    font-size: 24rpx;
+    margin-bottom: 100rpx;
+}
+
+.history {
+    display: flex;
+    background-color: #fff;
+    padding: 15rpx 0;
+}
+
+.his-item {
+    flex: 1;
+    text-align: center;
+}
+
+.order {
+    margin-top: 30rpx;
+    background-color: #fff;
+}
+
+.order-title {
+    padding: 20rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-content {
+    display: flex;
+}
+
+.order-item {
+    flex: 1;
+    text-align: center;
+    padding: 10rpx 0;
+}
+
+.address {
+    margin-top: 30rpx;
+    background-color: #fff;
+    padding: 20rpx;
+}
+
+.app_info {
+    margin-top: 30rpx;
+    background-color: #fff;
+}
+
+.app_info>view {
+    padding: 20rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.concat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommand {
+    margin-top: 30rpx;
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.logout {
+    margin-top: 30rpx;
+    color: #fff;
+    background-color: #eb4450;
+}

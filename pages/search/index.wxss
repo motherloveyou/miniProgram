@@ -1,0 +1,35 @@
+page {
+    background-color: #edece8;
+}
+
+.head {
+    display: flex;
+    padding: 20rpx;
+}
+
+.head input {
+    flex: 1;
+    height: 64rpx;
+    padding-left: 20rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+}
+
+.head button {
+    margin-left: 20rpx;
+    color: #fff;
+    background-color: #eb4450;
+}
+
+.search-content {
+    margin-top: 10rpx;
+}
+
+.search-item {
+    padding: 20rpx;
+    border-bottom: 1rpx solid #ccc;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

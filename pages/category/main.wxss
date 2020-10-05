@@ -1,0 +1,63 @@
+.title {
+    float: left;
+    width: 200rpx;
+    height: 1300rpx;
+}
+
+.title .item {
+    display: block;
+    padding: 15rpx 0;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.title .item.current {
+    color: #f40;
+    background-color: #fff;
+}
+
+.content {
+    float: left;
+    width: 550rpx;
+    height: 1300rpx;
+}
+
+.branch {
+    margin-bottom: 50rpx;
+}
+
+.branch-hd {
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 40rpx;
+    color: #555;
+}
+
+.branch-bd .item {
+    float: left;
+    width: 180rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.branch-bd .item image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.branch-bd .item text {
+    font-size: 24rpx;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

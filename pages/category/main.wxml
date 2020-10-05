@@ -1,0 +1,23 @@
+<view class="head">
+    <search></search>
+</view>
+<view class="category clearfix">
+    <scroll-view class="title" scroll-y scroll-top>
+        <view class="item {{index == currentIndex ? 'current' : ''}}" wx:for="{{categories}}" wx:key="cat_id" bindtap="change" data-index="{{index}}">
+            <text>{{item.cat_name}}</text>
+        </view>
+    </scroll-view>
+    <scroll-view class="content" scroll-y scroll-top>
+        <view class="branch" wx:for="{{categories[currentIndex].children}}" wx:key="cat_id">
+            <view class="branch-hd">
+                <text wx:if="{{item.children}}">/ {{item.cat_name}} /</text>
+            </view>
+            <view class="branch-bd clearfix">
+                <navigator wx:for="{{item.children}}" wx:for-item="item1" wx:key="cat_id" class="item" url="/pages/goods_list/index?cid={{item1.cat_id}}">
+                    <image src="{{item1.cat_icon}}" />
+                    <text>{{item1.cat_name}}</text>
+                </navigator>
+            </view>
+        </view>
+    </scroll-view>
+</view>

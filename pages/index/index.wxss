@@ -1,0 +1,50 @@
+.swiper navigator,
+.swiper image {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    padding: 10rpx 0;
+    justify-content: space-around;
+}
+
+.nav .item image {
+    width: 120rpx;
+    height: 130rpx;
+}
+
+.floor {
+    overflow: hidden;
+}
+
+.floor_hd {
+    padding: 20rpx 0 0;
+    background-color: #f4f4f4;
+}
+
+.floor_hd image {
+    width: 650rpx;
+    height: 50rpx;
+}
+
+.floor_bd {
+    padding: 10rpx 20rpx 20rpx 20rpx;
+    background-color: #fff;
+}
+
+.floor_bd navigator {
+    float: left;
+    margin-right: 5rpx;
+}
+
+.floor_bd navigator image {
+    width: 230rpx;
+    height: 180rpx;
+}
+
+.floor_bd navigator:first-child image {
+    width: 230rpx;
+    height: 360rpx;
+}

@@ -1,0 +1,117 @@
+.address {
+    display: flex;
+    font-size: 30rpx;
+    padding: 20rpx;
+}
+
+.address .info {
+    flex: 3;
+}
+
+.address .telNumber {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding: 20rpx;
+    font-size: 36rpx;
+    font-weight: 700;
+    border-top: 1rpx solid currentColor;
+    border-bottom: 1rpx solid currentColor;
+}
+
+.content {
+    flex: 1;
+    overflow: scroll;
+}
+
+.goods-item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.goods-item .image {
+    flex: 2;
+}
+
+.goods-item .image image {
+    width: 100%;
+}
+
+.goods-item .info {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20rpx;
+    height: 150rpx;
+}
+
+.goods-item .info .name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 24rpx;
+    text-align: left;
+}
+
+.goods-item .info .price-num {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-num .price {
+    color: #FF1313;
+}
+
+.price-num .num .number {
+    margin: 0 15rpx;
+}
+
+.tools {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+    border-top: 1rpx solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.tools .total {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 20rpx;
+}
+
+.total_price .price {
+    color: #FF0B19;
+}
+
+.total .tip {
+    font-size: 24rpx;
+    color: #908B86;
+}
+
+.tools .jiesuan {
+    flex: 1;
+    height: 100%;
+    line-height: 80rpx;
+    text-align: center;
+    background-color: #FF0000;
+    color: #fff;
+}

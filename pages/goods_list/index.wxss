@@ -1,0 +1,40 @@
+.goods-list {
+    border-top: 1px solid #ccc;
+}
+
+.goods-list .item {
+    display: flex;
+    padding: 20rpx;
+    align-items: center;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.goods-list .item image {
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.goods-list .item .info {
+    flex: 1;
+    height: 150rpx;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 24rpx;
+}
+
+.price {
+    color: #f40;
+    font-size: 40rpx;
+}
+
+.footer {
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #eee;
+}

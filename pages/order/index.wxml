@@ -1,0 +1,15 @@
+<tabs tabs="{{tabs}}" bindtabsChange="toggle"></tabs>
+<view class="order-item" wx:for="{{orders}}" wx:key="order_id">
+    <view class="order-number">
+        <view>订单编号</view>
+        <view>{{item.order_number}}</view>
+    </view>
+    <view class="order-price">
+        <view>订单价格</view>
+        <view class="price">￥ {{item.order_price}}</view>
+    </view>
+    <view class="order-date">
+        <view>订单日期</view>
+        <view>{{item.formatTime}}</view>
+    </view>
+</view>

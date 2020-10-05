@@ -1,0 +1,9 @@
+<view class="head">
+    <input value="{{value}}" placeholder="请输入搜索内容" bindinput="inputHandle"></input>
+    <button size="mini" bindtap="btnSearchHandle">搜 索</button>
+</view>
+<view class="search-content">
+    <navigator class="search-item" wx:for="{{goods}}" wx:key="goods_id" url="/pages/goods_detail/main?goods_id={{item.goods_id}}">
+        {{item.name}}
+    </navigator>
+</view>

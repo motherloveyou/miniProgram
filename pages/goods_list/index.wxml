@@ -1,0 +1,15 @@
+<search></search>
+<tabs tabs="{{tabs}}" bindtabsChange="toggle"></tabs>
+<view class="goods-list">
+    <navigator class="item" wx:for="{{goods}}" wx:key="goods_id" wx:if="{{item.goods_small_logo}}" url="/pages/goods_detail/main?goods_id={{item.goods_id}}">
+        <image src="{{item.goods_small_logo}}" mode="scaleToFill"/>
+        <view class="info">
+            <text class="name">{{item.goods_name}}</text>
+            <text class="price">￥{{item.goods_price}}</text>
+        </view>
+    </navigator>
+</view>
+<view class="footer">
+    <text>{{tipText}}</text>
+</view>
+
